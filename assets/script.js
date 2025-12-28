@@ -1,11 +1,12 @@
-const slider = document.getElementById("styleSlider")
-const pizzaBase = document.getElementById("pizzaBase")
+const slider = document.getElementById("styleSlider");
+const pizzaBase = document.getElementById("pizzaBase");
 
 slider.addEventListener("input", () => {
-  pizzaBase.src = `assets/pizzabase-${slider.value}.png`;
+  pizzaBase.src = `images/pizza-base-${slider.value}.png`;
 });
 
-const checkboxes = document.querySelectorAll("input[type='checkbox]");
+
+const checkboxes = document.querySelectorAll("input[type='checkbox']");
 
 checkboxes.forEach(box => {
   box.addEventListener("change", () => {
